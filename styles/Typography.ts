@@ -3,8 +3,7 @@ import { rem } from 'polished';
 
 // Fallback and default font stack
 const FALLBACK_FONT = '-apple-system, BlinkMacSystemFont, sans-serif';
-const PRIMARY_FONT = 'hurme_no2-webfont';
-export const DEFAULT_FONT_STACK = `${PRIMARY_FONT}, ${FALLBACK_FONT}`;
+export const DEFAULT_FONT_STACK = `'HongKong', ${FALLBACK_FONT}`; // Updated font stack
 
 /**
  * To apply these styles, select your variant (title, text, subtitle)

@@ -40,3 +40,24 @@ a {
     color-scheme: dark;
   }
 }
+
+@font-face {
+  font-family: 'HongKong';
+  src: url('/fonts/Fontspring-DEMO-hongkong-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HongKong';
+  src: url('/fonts/Fontspring-DEMO-hongkong-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HongKong';
+  src: url('/fonts/Fontspring-DEMO-hongkong-bolditalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
