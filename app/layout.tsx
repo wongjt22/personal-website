@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 
 const HongKong = localFont({
   src: "./fonts/Fontspring-DEMO-hongkong-regular.otf",
-  variable: "--font-geist-mono",
+  variable: "--font-hongkong",
   weight: "100 900",
 });
 
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${HongKong.variable} antialiased`}
+        className={`${HongKong.className} bg-black100`}
       >
         <Header />
         {children}
