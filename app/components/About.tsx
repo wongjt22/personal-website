@@ -1,9 +1,13 @@
 import { Title, Body, Hover, Subtitle } from '@/styles/Typography';
 import Image from 'next/image';
 import PlaceholderPic from '@/assets/fallen_angels.jpg';
+import QuizletLogo from '@/assets/quizlet_logo.png';
+import HMSALogo from '@/assets/hmsa_logo.png';
+import WDBLogo from '@/assets/wdb_logo.svg';
+
 
 const LandingText = (
-  <div className={`flex flex-col items-center gap-8 ${Body.One} max-w-5xl `}>
+  <div className={`flex flex-col items-center gap-8 ${Body.One} max-w-5xl`}>
     <h1 className={Title.One}>
       Hello there! My name is Jackson and I'm a senior at UC Berkeley.
     </h1>
@@ -31,7 +35,7 @@ const LandingText = (
         HMSA (Blue Cross Blue Shield of Hawai'i)
       </a>, and{' '}
       <a 
-        href="https://www.rimble.com" 
+        href="https://www.rimble.io" 
         className={`text-neonyellow100 ${Hover.Link}`}
       >
         Rimble
@@ -143,18 +147,38 @@ const AboutHighlights = (
 )
 
 const AboutLogos = (
-  <div className="flex lflex-row flex-col gap-16">
-    
+  <div className="flex flex-row justify-center items-center gap-16 lg:gap-52">
+    <Image
+      src={QuizletLogo}
+      alt="Placeholder Image"
+      height={80}
+      className='rounded-lg overflow-hidden'
+    />
+    <Image
+      src={HMSALogo}
+      alt="Placeholder Image"
+      height={48}
+      className='rounded-lg overflow-hidden'
+    />
+    <div className='text-blue-600 text-5xl font-sans'>Rimble</div>
+    <Image
+      src={WDBLogo}
+      alt="Placeholder Image"
+      height={48}
+      className='rounded-lg overflow-hidden'
+    />
   </div>
 )
 
 const AboutSection = (
   <div className="mx-auto py-32 sm:py-48 lg:py-56 flex justify-center">
+    <div className='flex flex-col gap-16'>
     <div className="flex lg:flex-row flex-col gap-16 items-start">
       {AboutText}
       {AboutHighlights}
     </div>
     {AboutLogos}
+    </div>
   </div>
 );
 
@@ -164,7 +188,7 @@ export default function About() {
 
   return (
     <div>
-      <div className="relative isolate px-6 lg:pt-24 lg:px-8 ">
+      <div className='lg:pt-32'>
         {LeftGradient}
         {LandingSection}
         {RightGradient}
