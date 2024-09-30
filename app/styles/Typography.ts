@@ -1,7 +1,7 @@
 export const Title = {
   One: 'text-3xl font-bold tracking-tight text-slate-300 sm:text-6xl',
-  Two: 'text-2xl font-semibold tracking-tight text-slate-300 sm:text-5xl',
-  Three: 'text-2xl font-semibold tracking-tight text-slate-300 sm:text-4xl',
+  Two: 'text-2xl font-medium tracking-tight text-slate-300 sm:text-5xl',
+  Three: 'text-2xl font-medium tracking-tight text-slate-300 sm:text-4xl',
 };
 
 export const Subtitle = {

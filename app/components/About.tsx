@@ -4,7 +4,7 @@ import PlaceholderPic from '@/assets/fallen_angels.jpg';
 import QuizletLogo from '@/assets/quizlet_logo.png';
 import HMSALogo from '@/assets/hmsa_logo.png';
 import WDBLogo from '@/assets/wdb_logo.svg';
-
+import BerkelyLogo from '@/assets/berkeley_logo.png';
 
 const LandingText = (
   <div className={`flex flex-col items-center gap-8 ${Body.One} max-w-5xl`}>
@@ -147,7 +147,13 @@ const AboutHighlights = (
 )
 
 const AboutLogos = (
-  <div className="flex flex-row justify-center items-center gap-16 lg:gap-52">
+  <div className="flex flex-row justify-center items-center gap-16 lg:gap-52 filter grayscale brightness-200">
+    <Image
+      src={BerkelyLogo}
+      alt="Placeholder Image"
+      height={100}
+      className='rounded-lg overflow-hidden'
+    />
     <Image
       src={QuizletLogo}
       alt="Placeholder Image"

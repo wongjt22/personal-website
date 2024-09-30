@@ -71,8 +71,8 @@ export default function Header() {
             </a>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-neonyellow100">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
+          <a href="#" className="text-sm font-medium leading-6 text-neonyellow100 ring-2 ring-neonyellow100 ring-offset-3 rounded-lg p-1">
             Resume <span aria-hidden="true"></span>
           </a>
         </div>
@@ -83,11 +83,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Jackson Wong</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
+              {CapIcon}
             </a>
             <button
               type="button"
@@ -102,7 +98,7 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {NavItems.map((item) => (
-                  <a href={item.href} key={item.name} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:bg-gray-50">
+                  <a href={item.href} key={item.name} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300">
                     {item.name}
                   </a>
                 ))}
@@ -110,7 +106,7 @@ export default function Header() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-neonyellow100 hover:bg-gray-50"
+                  className="-mx-3 px-3 py-2.5 text-base font-semibold leading-7 text-neonyellow100 border-2 border-neonyellow100"
                 >
                   Resume
                 </a>
