@@ -23,7 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${HongKong.className} bg-black100`}
+        // className={`${HongKong.className} bg-black100`}
+        className={`bg-black100`}
       >
         <Header />
         {children}
